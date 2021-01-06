@@ -1,0 +1,13 @@
+---
+
+name: "balance-transfer-org5"
+x-type: "hlfv1"
+description: "Balance Transfer Network - client definition for Org5"
+version: "1.0"
+client:
+  organization: Org5
+  credentialStore:
+    path: "./fabric-client-kv-org5"
+    cryptoStore:
+      path: "/tmp/fabric-client-kv-org5"
+    wallet: wallet-name

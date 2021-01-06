@@ -1,0 +1,5 @@
+../../../hyperledger/fabric-samples/bin/cryptogen generate --config=./cryptogen.yaml
+
+../../../hyperledger/fabric-samples/bin/configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./genesis.block
+
+../../../hyperledger/fabric-samples/bin/configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./dk-educhain.tx -channelID mychannel

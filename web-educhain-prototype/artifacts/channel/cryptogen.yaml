@@ -1,0 +1,69 @@
+
+OrdererOrgs:
+  - Name: Orderer
+    Domain: example.com
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+  - Name: Org1
+    Domain: org1.example.com
+    CA:
+       Hostname: ca 
+
+    Template:
+      Count: 1   # Cryptogen peer 개수
+      # Start: 5
+      # Hostname: {{.Prefix}}{{.Index}} # default
+      SANS:
+        - "localhost"
+    Users:        # Cryptogen User 개수
+      Count: 1
+      
+  - Name: Org2
+    Domain: org2.example.com
+    CA:
+       Hostname: ca
+
+    Template:
+      Count: 1
+      SANS:
+        - "localhost"
+    Users:
+      Count: 1
+
+  - Name: Org3
+    Domain: org3.example.com
+    CA:
+       Hostname: ca 
+
+    Template:
+      Count: 1
+      SANS:
+        - "localhost"
+    Users:
+      Count: 1
+
+  - Name: Org4
+    Domain: org4.example.com
+    CA:
+       Hostname: ca 
+
+    Template:
+      Count: 1
+      SANS:
+        - "localhost"
+    Users:
+      Count: 1
+      
+  - Name: Org5
+    Domain: org5.example.com
+    CA:
+       Hostname: ca 
+
+    Template:
+      Count: 1
+      SANS:
+        - "localhost"
+    Users:
+      Count: 1
