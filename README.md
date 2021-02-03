@@ -1,1 +1,1 @@
-# web_educhain-prototype
+# web-educhain
